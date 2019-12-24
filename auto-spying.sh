@@ -9,7 +9,7 @@ trap cleanup SIGINT SIGTERM
 while true
 do
     rm -f ~/attack_spying/*
-    timeout -k 7s 7s ruby ~/flush-reload-attacks/flush-reload/myversion/ruby/AttackRecorderAuto.rb \
+    timeout -k 5s 5s ruby ~/flush-reload-attacks/flush-reload/myversion/ruby/AttackRecorderAuto.rb \
         --spy-binary ~/flush-reload-attacks/experiments/links/binaries/links-demo \
         --probe-file ~/flush-reload-attacks/experiments/links/binaries/links-demo.probes \
         --output-dir ~/attack_spying
